@@ -5,7 +5,11 @@
   "main": "index.js",
   "scripts": {
     "test": "mocha",
-    "dev": "node ./server.js"
+    "start": "node ./server.js -H 0.0.0.0 -p $PORT",
+    "build": "next build",
+    "start:dev": "next start",
+    "start:prod": "next start -p 80",
+    "export": "next build && next export"
   },
   "author": "",
   "license": "ISC",
